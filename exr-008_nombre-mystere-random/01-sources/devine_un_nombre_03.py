@@ -2,7 +2,7 @@ from random import randint
 
 min_val = 0
 max_val = 10
-nombre_mystere = randint(0, 10)
+nombre_mystere = randint(min_val, max_val)
 tries = 0
 
 def str_to_integer(str_v: str) -> str or int:

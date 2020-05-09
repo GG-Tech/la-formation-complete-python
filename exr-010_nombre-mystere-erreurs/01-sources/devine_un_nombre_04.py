@@ -11,7 +11,9 @@ nombre_mystere = random.randint(0, 10)
 nombre = input("Quel est le nombre mystère ? ")
 nombre = str_to_integer(nombre)
 
-if nombre > nombre_mystere:
+if type(nombre) is str:
+    print(f"Nombre Invalide : '{nombre}'.")
+elif nombre > nombre_mystere:
     print(f"Le nombre mystère est plus petit que {str(nombre)}")
 elif nombre < nombre_mystere:
     print(f"Le nombre mystère est plus grand que {str(nombre)}")
